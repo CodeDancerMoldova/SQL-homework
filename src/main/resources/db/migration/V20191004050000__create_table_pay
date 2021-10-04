@@ -1,0 +1,5 @@
+CREATE TABLE pay(
+    cardNr NUMBER(16) PRIMARY KEY,
+    employee_id NUMBER NOT NULL UNIQUE ,
+    FOREIGN KEY (employee_id) REFERENCES employees(employee_id)
+);
